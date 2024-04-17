@@ -1,38 +1,210 @@
 .App {
-  text-align: center;
+    text-align: center;
+    margin:0px;
+    padding:0px;
+   
+      }
+    
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+    p, a, li, button, ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+  }  
+  body {
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color:#353535;
+    color: #fff !important;
+    margin:0; 
+   
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+     height: auto; 
+     margin-top: 15px;
+  }
+  nav.navbar .logo-brand img {
+    margin-right: 0px !important; 
+  }
+  button {
+    border: 0; 
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    nav.navbar .logo-brand img {
+      margin-right: 20px !important; /* Adjust margin for better spacing */
+    }
+    .navbar .navbar-links {
+      margin-left: 50px; 
+      margin-right: 20px;
+                         
+    }
+  }
+  /* @media (min-width:768px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+} */
+nav.navbar {
+  padding: 18px 0;
+  position:sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  height:100px;
+}
+nav.navbar.scrolled {
+    padding: 0px 0;
+    background-color:rgb(70, 92, 69);
+  }
+  nav.navbar a.navbar-brand {
+      width: 20%;
+  }
+  .navbar .navbar-links {
+    margin-left: 300px;
+    margin-right: 50px;
+    display:flex;
+    gap:20px;
+  }
+  @media (max-width: 991.98px) {
+    .navbar .navbar-links {
+      margin-left: 0; /* Reset left margin */
+      margin-right: auto; /* Set right margin to auto */
+    }
+  .navbar .navbar-buttons {
+    margin-left: 0;
+    margin-right: 20px
+    /* padding-left: 30px; */
+  }
+} 
+.vvd{
+    background-color: black;
+    color: white;
+    padding:20px;
+}
+.avail-img{
+    width:100%;
+}
+.avail-txt{
+    background-color: rgb(70, 92, 69);
+    padding:50px;  
+}
+.avail-txt-img{
+    background-color: black;
+    color: white;
+    padding:20px 40px 20px 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ 
+.nav_amenities_btn{
+background-color: black;
+color:white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 768px) {
+  .amencontainer {
+    flex-direction: row; 
+   
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav_interiors_btn{
+  background-color: black;
+  color:white;
   }
-  to {
-    transform: rotate(360deg);
+  @media (min-width: 768px) {
+    .interiorscontainer {
+      flex-direction: row; 
+     
+    }
   }
-}
+  .register-form-container {
+    background-color:rgb(70, 92, 69);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  .register-p{
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  }
+  .footer-container {
+    background-color:rgb(70, 92, 69);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    flex: 1;
+    margin-right: 8px;
+
+  }
+  
+  .footer-item:last-child {
+    margin-right: 0;
+    
+  }
+  
+  .footer-item img {
+    width: 250px; 
+    height: auto;
+    
+  }
+  .footer-item2 img{
+    width: 400px; 
+    height: auto;
+  }
+  .footer-item3 img{
+    width: 40px; 
+    height: auto;
+    margin-left: 10px;
+  }
+  .footer-line {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  
