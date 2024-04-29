@@ -26,7 +26,7 @@ const NavSales = () => {
           <div>
             
          {!click? (
-          <button className="btn btn-dark Nav_interiors_btn" style={{ padding:" 10px 80px 10px 80px",borderRadius:"0px"}}onClick={()=>setClick(true)}>SCHDULE APPOINTMENT</button> 
+          <button className="btn btn-dark Nav_interiors_btn" style={{ padding:" 10px ",borderRadius:"0px"}}onClick={()=>setClick(true)}>SCHDULE APPOINTMENT</button> 
         ) : (
           <Link to="/">
             <button className="btn btn-dark" onClick={()=>setClick(true)}>SCHDULE APPOINTMENT</button>

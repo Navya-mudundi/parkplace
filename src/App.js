@@ -1,27 +1,27 @@
-
+import React from 'react';
 import './App.css';
-import NavBar from './Components/NavBar';
-import NavAvail from './Components/NavAvail';
-import Navneigh from './Components/Navneigh';
-import NavAmenities from './Components/NavAmenities';
-import NavInteriors from './Components/NavInteriors';
-import NavSales from './Components/NavSales';
-import Register from './Components/Register';
-import Footer from './Components/Footer';
-
+import Home from './Components/Home';
+import Availability from './Components/AvailabilityPage';
+import NeighborhoodPage from './Components/NeighborhoodPage';
+import Interiors from './Components/Interiors';
+import PREFERRED_LENDERS from './Components/PREFERRED_LENDERS';
+import {  BrowserRouter  ,Route, Routes  } from 'react-router-dom'; 
 
 function App() {
   return (
+     <BrowserRouter>
     <div className="App">
-      <NavBar/>
-      <NavAvail/>
-      <Navneigh/>
-      <NavAmenities/>
-      <NavInteriors/>
-      <NavSales/> 
-      <Register/>
-      <Footer/>
+    
+      <Routes> 
+        <Route exact path="/" element={<Home/>} /> 
+        <Route path="/availability" element={<Availability/>} />
+        <Route path="/Interiors" element={<Interiors/>} />  
+        <Route path="/NEIGHBORHOOD" element={<NeighborhoodPage />} /> 
+        <Route path="/PREFERRED_LENDERS" element={< PREFERRED_LENDERS/>}/>
+      </Routes> 
+    
     </div>
+    </BrowserRouter>
   );
 }
 

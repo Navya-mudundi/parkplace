@@ -20,7 +20,7 @@ const Navneigh = () => {
               <h1>NEIGHBORHOOD</h1>
                <p>Nestled between a quiet residential neighborhood and future Lakeline Park, Park Place is conveniently located with easy access to Cedar Park, The Domain, Round Rock, Lake Travis, and Austin. </p>
                {!clicked ? (
-              <button className="btn btn-dark nav_neigh_btn"style={{padding:" 20px 90px 20px 90px",borderRadius:"0px"}}onClick={()=>setClicked(true)}>DISCOVER</button>
+              <button className="btn btn-dark nav_neigh_btn"style={{padding:" 20px 90px ",borderRadius:"0px"}}onClick={()=>setClicked(true)}>DISCOVER</button>
                ) : (
                <Link to="/NEIGHBORHOOD">
                   <button className="btn btn-dark">DISCOVER</button>

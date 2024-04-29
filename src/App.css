@@ -1,3 +1,6 @@
+
+/* @import '~@fontsource/orpheus'; */
+
 .App {
     text-align: center;
     margin:0px;
@@ -46,7 +49,7 @@
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     nav.navbar .logo-brand img {
-      margin-right: 20px !important; /* Adjust margin for better spacing */
+      margin-right: 20px !important; 
     }
     .navbar .navbar-links {
       margin-left: 50px; 
@@ -54,12 +57,7 @@
                          
     }
   }
-  /* @media (min-width:768px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
-} */
+
 nav.navbar {
   padding: 18px 0;
   position:sticky;
@@ -83,13 +81,13 @@ nav.navbar.scrolled {
   }
   @media (max-width: 991.98px) {
     .navbar .navbar-links {
-      margin-left: 0; /* Reset left margin */
-      margin-right: auto; /* Set right margin to auto */
+      margin-left: 0; 
+      margin-right: auto; 
     }
   .navbar .navbar-buttons {
     margin-left: 0;
     margin-right: 20px
-    /* padding-left: 30px; */
+  
   }
 } 
 .vvd{
@@ -207,4 +205,226 @@ color:white;
     border-top: 1px solid #ccc;
     margin-top: 20px;
   }
+  .availability-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
   
+  .content {
+   margin:30px auto;
+   background-color:  rgb(70, 92, 69);
+  }
+  
+ .image-section h1{
+  
+  color:#353535;
+ }
+   
+  .image-section img {
+   width:75%;
+    
+  }
+  
+  .text-section {
+    
+   padding: 0 20px;
+    margin: 30px auto;
+    color:#fff
+  }
+  
+  .text-section h1 {
+    font-size: 24px;
+    margin: 20px;
+    color:black;
+  }
+  
+  .availability-table {
+    width: 60% ;
+    margin: 40px auto;
+    border-collapse: collapse;
+   
+  }
+  
+  .availability-table th, .availability-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+  }
+  .availability-table td{
+    color:rgb(70, 92, 69);
+    background-color: #fff;
+  }
+  
+  .green-row {
+    background-color: rgb(70, 92, 69);
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  .availability-page {
+    padding: 20px;
+  }
+  
+  .content2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .image-section2 {
+    flex:0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+   
+  }
+  
+  .image-section2 img {
+    width: 100%;
+   } 
+  
+  .text-section2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    color:rgb(70, 92, 69);
+    margin-top: 150px;
+    
+  }
+  
+  .text-section2 h1 {
+    margin-bottom: 10px;
+  }
+  
+  .text-section2 p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .bottom-link {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px 60px;
+    background-color:rgb(70, 92, 69) ;
+    color: #fff;
+    text-decoration: none;
+
+    border-radius: none;
+    transition: background-color 0.3s;
+  }
+  
+  .bottom-link:hover {
+    background-color: #0056b3;
+  }
+  .footer-line2{
+    border-top: 1px solid black;
+  }
+  .container-neighbor{
+    max-width:100%;
+  }
+ 
+.description {
+    margin: 80px;
+    color:rgb(70, 92, 69);
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}  
+
+button {
+    padding: 10px 50px;
+    background-color:rgb(70, 92, 69);
+    color: #fff;
+    border: none;
+    border-radius:none;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #404242;
+}
+.scheme .col-md-4 mb-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-line3{
+  width:80%;
+  margin:10% auto;
+}
+/* preferredLenders.css */
+.Preferred {
+  padding: 20px;
+  background-color:rgb(70, 92, 69);
+}
+
+.preferred_img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 40%;
+}
+
+
+
+.button-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.custom-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+.col-md-4 h3,
+.col-md-4 p {
+  text-align: left;
+  margin-left: 70%;
+}
+.custom-btn{
+  margin-left: 70%;
+}
+@media (max-width: 767px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    color:white;
+    background-color:rgb(70, 92, 69);
+  }
+
+  .button-link {
+    display: inline-block;
+  }
+  .col-md-4 h3,
+.col-md-4 p {
+  text-align: left;
+  margin-left: 20%;
+}
+.custom-btn{
+  margin-left: 20%;
+}
+.preferred_img{
+  max-width: 100%;
+  height: auto;
+  margin-left: 10%;
+}
+.footer-line4{
+ width:100%;
+ margin-left: 0; 
+}
+
+}
+.footer-line4{
+  width:80%;
+ margin-left: 100px;
+}
