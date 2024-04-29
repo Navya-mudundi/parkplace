@@ -6,6 +6,8 @@ import NeighborhoodPage from './Components/NeighborhoodPage';
 import Interiors from './Components/Interiors';
 import PREFERRED_LENDERS from './Components/PREFERRED_LENDERS';
 import {  BrowserRouter  ,Route, Routes  } from 'react-router-dom'; 
+import Register from './Components/Register';
+
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         <Route path="/Interiors" element={<Interiors/>} />  
         <Route path="/NEIGHBORHOOD" element={<NeighborhoodPage />} /> 
         <Route path="/PREFERRED_LENDERS" element={< PREFERRED_LENDERS/>}/>
+        <Route path="/REGISTER" element={< Register/>}/>
+        
+
       </Routes> 
     
     </div>

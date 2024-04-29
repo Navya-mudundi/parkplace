@@ -18,7 +18,11 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll",handleScroll );
   }, []);
 
- 
+  const handleRegisterClick = () => {
+    window.location.href = "/Register";
+    
+  };
+
   return (
  
     <Navbar expand="md"className={scrolled ? "scrolled" : ""}>
@@ -33,14 +37,17 @@ const NavBar = () => {
              <Nav.Link as={Link} to="/Interiors" >INTERIORS</Nav.Link>
              <Nav.Link as={Link} to="/NEIGHBORHOOD" >NEIGHBORHOOD</Nav.Link>
              <Nav.Link as={Link} to="/PREFERRED_LENDERS" >PREFERRED LENDERS</Nav.Link>
-             <Nav.Link as={Link} to="/BROCHURE"  download="brochure.pdf">BROCHURE</Nav.Link> 
+             <Nav.Link as={Link} to="/BROCHURE" download="brochure.pdf" target="_blank">BROCHURE</Nav.Link>
+             
              
              
              </div>
            </Nav>
        
           <Nav>
-            <button className="vvd" >REGISTER</button>
+            
+              <button className="vvd" onClick={handleRegisterClick}  >REGISTER</button>
+            
           </Nav>
        </Navbar.Collapse>
        </Container>
